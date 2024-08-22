@@ -1,4 +1,4 @@
-# CMTA Token 
+# CMTA Token With Renounceable Rights
 > To use the CMTAT, we recommend the latest audited version, from the [Releases](https://github.com/CMTA/CMTAT/releases) page. Currently, it is the version [v2.3.0](https://github.com/CMTA/CMTAT/releases/tag/v2.3.0)
 
 ## Introduction
