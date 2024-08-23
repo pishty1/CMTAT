@@ -20,6 +20,7 @@ import "./wrapper/extensions/ERC20SnapshotModule.sol";
 
 import "./wrapper/controllers/ValidationModule.sol";
 import "./wrapper/extensions/MetaTxModule.sol";
+import "./wrapper/extensions/RightsModule.sol";
 import "./wrapper/extensions/DebtModule/DebtBaseModule.sol";
 import "./wrapper/extensions/DebtModule/CreditEventsModule.sol";
 import "./security/AuthorizationModule.sol";
@@ -39,7 +40,8 @@ abstract contract CMTAT_BASE is
     ERC20BaseModule,
     ERC20SnapshotModule,
     DebtBaseModule,
-    CreditEventsModule
+    CreditEventsModule,
+    RightsModule
 {
     /**
      * @notice
@@ -139,6 +141,7 @@ abstract contract CMTAT_BASE is
         /* Other modules */
         __DebtBaseModule_init_unchained();
         __CreditEvents_init_unchained();
+        __RightsModule_init_unchained();
         __Base_init_unchained(tokenId_, terms_, information_, flag_);
 
         /* own function */
