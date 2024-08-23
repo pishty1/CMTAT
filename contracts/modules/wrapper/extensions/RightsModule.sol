@@ -7,7 +7,7 @@ import "../../security/AuthorizationModule.sol";
 
 abstract contract RightsModule is Initializable, ContextUpgradeable, AuthorizationModule {
     bytes32 public constant RIGHTS_ROLE = keccak256("RIGHTS_ROLE");
-    // an integer that represents the ratio of rights to offered shares, e.g. 1:10
+    // an integer that represents the ratio of rights to offered shares e.g. 1:10
     uint256 public first;
     uint256 public second;
     // an integer to hold the price in usdc
